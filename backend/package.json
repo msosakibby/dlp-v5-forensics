@@ -1,0 +1,26 @@
+{
+  "name": "legal-forensics-backend",
+  "version": "4.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "gcp-build": "npm run build",
+    "start": "functions-framework --target=processDocument",
+    "dev": "npm run build && functions-framework --target=processDocument"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "@google-cloud/storage": "^7.7.0",
+    "@google-cloud/documentai": "^8.0.0",
+    "@google-cloud/firestore": "^7.3.0",
+    "@google-cloud/vision": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0",
+    "gts": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

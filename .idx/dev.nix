@@ -12,6 +12,8 @@
     pkgs.nodejs_22
     pkgs.nodePackages.nodemon
     pkgs.openssl_3_3
+    pkgs.gh
+    pkgs.nano
   ];
 
   # Sets environment variables in the workspace
